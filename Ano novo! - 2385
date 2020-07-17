@@ -1,0 +1,87 @@
+#include <stdio.h>
+
+int main() {
+  int d1, d2;
+  double comida,refri,decora,comprasn,comprasano,com1,refr1,cerv1,deco1,total;
+
+
+   scanf("%d", &d1);
+   scanf("%lf %lf %lf", &comida , &refri, &decora);
+   scanf("%d", &d2);
+   scanf("%lf %lf %lf %lf", &com1 , &refr1 , &cerv1 , &deco1);
+
+   if(d1 < 20){
+     refri = refri*0.9;
+     decora = decora*0.85;
+     comprasn = (comida + refri + decora);}
+     else if(d1 == 20){
+     comida = comida*0.88;
+     refri = refri*0.85;
+     decora = decora*0.80;
+     comprasn = (comida+refri+decora);}
+     else if(d1 == 21){
+     comida = comida*0.83;
+     refri = refri*0.78;
+     decora = decora*0.73;
+     comprasn = (comida+refri+decora);}
+    else if(d1 == 22){
+     comida = comida*0.80;
+     refri = refri*0.78;
+     decora = decora*0.7;
+     comprasn = (comida+refri+decora);}
+     else if(d1 == 23){
+    comida = comida*0.75;
+    refri = refri*0.71;
+    decora = decora*0.65;
+    comprasn = (comida+refri+decora);}
+    else if(d1 == 24){
+    comida = comida*0.65;
+    refri = refri*0.65;
+    decora = decora*0.5;
+    comprasn = (comida+refri+decora);}
+      if(d2 == 25){
+    com1 = com1*0.85;
+    refr1 = refr1*0.87;
+    deco1 = deco1 *0.9;
+    comprasano = (com1+refr1+deco1+cerv1);}
+    else if(d2 == 26){
+    com1 = com1*0.81;
+    refr1 = refr1*0.75;
+    cerv1 = cerv1*0.95;
+    deco1 = deco1*0.77;
+    comprasano = (com1+refr1+cerv1+deco1);}
+    else if(d2 == 27){
+     com1 = com1*0.76;
+     refr1 = refr1*0.70;
+     cerv1 = cerv1*0.88;
+     deco1 = deco1*0.67;
+     comprasano = (com1+refr1+cerv1+deco1);}
+    else if(d2 == 28){
+     com1 = com1*0.7;
+     refr1 = refr1*0.68;
+     cerv1 = cerv1*0.8;
+     deco1 = deco1*0.65;
+     comprasano = (com1+refr1+cerv1+deco1);}
+    else if(d2 == 29 || d2 == 30){
+     com1 = com1*0.65;
+     refr1 = refr1*0.6;
+     cerv1 = cerv1*0.67;
+     deco1 = deco1*0.58;
+     comprasano = (com1+refr1+cerv1+deco1);}
+    else if(d2 == 31){
+     com1 = com1*0.6;
+     refr1 = refr1*0.53;
+     cerv1 = cerv1*0.55;
+     deco1 = deco1*0.34;
+     comprasano = (com1+refr1+cerv1+deco1);}
+
+     total = (comprasn + comprasano);
+     
+
+   printf("Compras de natal: R$ %.2f.\n", comprasn);
+   printf("Compras de ano novo: R$ %.2f.\n", comprasano); 
+   printf("Total das compras: R$ %.2f.\n", total);                          
+
+  return 0;
+}
+    
