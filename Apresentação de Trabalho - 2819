@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main() {
+	int a, b, c, d, e, cont = 0, f, h, j, l;
+printf("Trabalho aborda Interface Grafica? (0 - Nao 1 - Sim)\n");
+scanf("%d", &a);
+printf("Trabalho aborda Inteligencia Artificial? (0 - Nao 1 - Sim)\n");
+scanf("%d", &b);
+printf("Trabalho aborda Encapsulamento? (0 - Nao 1 - Sim)\n");
+scanf("%d", &c);
+printf("Trabalho aborda Indentacao? (0 - Nao 1 - Sim)\n");
+scanf("%d", &d);
+printf("Trabalho aborda Structs? (0 - Nao 1 - Sim)\n");
+scanf("%d", &e);
+if (a == 1 || b == 1){
+	cont++;
+}
+if (c == 1 && d == 1){
+	cont++;
+}
+if (e == 1)
+{
+	cont++;
+}
+if (cont >= 3){
+	printf("Seu trabalho sera avaliado.\n");
+}
+else{
+	printf("Seu trabalho nao sera avaliado, nota 0.\n");
+}
+return 0;
+}
