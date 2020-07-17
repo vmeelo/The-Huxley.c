@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main (){
+	int altura, baseMaior, baseMenor;
+	float area;
+	scanf("%i", &baseMenor);
+	scanf("%i", &baseMaior);
+	scanf("%i", &altura);
+	area = (float)((baseMaior + baseMenor) * altura) / 2;
+	printf("%.1f", area);
+	
+return 0;
+}
