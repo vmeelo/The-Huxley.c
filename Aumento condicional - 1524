@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main(){
+	float salario, novoS, porcentagem, valor;
+	int n1;
+	scanf(" %f", &salario);
+	if (salario <= 280){
+		novoS = salario * 1.2;
+		n1 = 20;
+		valor = novoS - salario;
+	}
+	if (280 < salario && salario < 700){
+	novoS = salario * 1.15;
+	n1 = 15;
+	valor = novoS - salario;	
+	}
+	if ( 700 < salario && salario < 1500 ){
+		novoS = salario * 1.1;
+		n1 = 10;
+		valor = novoS - salario;
+	}
+	if(salario >= 1500){
+		novoS = salario * 1.05;
+		n1 = 5;
+		valor = novoS - salario;
+	}
+	printf("%.2f\n", salario);
+	printf("%i\n", n1);
+	printf("%.2f\n", valor);
+	printf("%.2f\n", novoS);
+	
+
+	return 0;
+}
