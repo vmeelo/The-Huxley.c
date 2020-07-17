@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+	float media, n1, n2, n3;
+	int aprov = 0;
+	scanf("%f", &n1);
+	scanf("%f", &n2);
+	scanf("%f", &n3);
+	media = (n1 + n2 + n3)/3;
+	if (n1 > media)
+	    aprov++;
+    if (n2 > media)
+	    aprov++;
+	if (n3 > media)
+	    aprov++;
+printf("%d\n", aprov);
+return 0;
+}
