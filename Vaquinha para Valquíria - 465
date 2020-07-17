@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+	float media, doacao, cont = 0;
+	int i = 0;
+	while((doacao >= 0)){
+		scanf(" %f", &doacao);
+		if(doacao >= 0){
+		cont += doacao;
+		i++;
+		media = cont / i;
+	}
+	}
+
+	printf("%.2f\n", cont);
+	printf("%.2f\n", media);
+
+	return 0;
+}
