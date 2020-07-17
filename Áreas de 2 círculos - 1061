@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(){
+  float r1, r2;
+  float area1, area2;
+  scanf("%f\n",&r1);
+  scanf("%f\n",&r2);
+  area1 = (2 * 3,14)*r1;
+  area2 = (2 * 3,14)*r2;
+  if(area1>area2)
+  	printf("Primeiro circulo\n");
+  else
+  		if(area2>area1)
+  			printf("Segundo circulo\n");
+			
+	else
+		printf("Iguais\n");
+			
+return 0;
+}
