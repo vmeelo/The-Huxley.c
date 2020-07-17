@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main (){
+  float media;
+  int aulas, faltas;
+  scanf("%f %i %i", &media, &aulas, &faltas);
+if(faltas <= (aulas* 0.25) && media >= 5){
+printf("APROVADO\n");
+return 0;
+}
+if (faltas <=(aulas *0.5) && media >= 7){
+printf("APROVADO\n");
+return 0;
+}
+printf("REPROVADO\n");
+  return 0;
+}
