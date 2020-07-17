@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main (){
+	float n1, n2, n3, media;
+	scanf("%f", &n1);
+	scanf("%f", &n2);
+	scanf("%f", &n3);
+	media = (n1 + n2 + n3) / 3;
+	if (media >= 7){
+		printf("aprovado\n");
+    return 0;
+	}
+	if (media < 3){
+		printf("reprovado\n");
+    return 0;
+	}
+	if (3 <= media < 7){
+		printf("prova final\n");
+    return 0;
+	}		
+	return 0;
+
+}
