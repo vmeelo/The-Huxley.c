@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main (){
+  int livros, mochila =0, cont=0;
+  do{
+    scanf(" %i", &livros);
+    mochila += livros;
+    if(mochila <= 18){
+        cont++;
+    }
+  }while( mochila <= 18);
+  printf("%i", cont);
+	return 0;
+}
