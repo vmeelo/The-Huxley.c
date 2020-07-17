@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main (){
+	int glicose, cont =0, sm= 0;
+	float media;
+	
+	do{
+		scanf(" %i", &glicose);
+		if (glicose > 0){
+		cont++;
+		sm += glicose;
+}
+}while (glicose > 0);
+		media = (sm / cont);
+  if (media < 110){
+    printf("Glicose Normal\n");
+    return 0;
+  }
+    if((110 < media) && (media < 199)){
+    printf("Glicose Alterada\n");
+    return 0;
+  }
+  if(media >= 200){
+    printf("Glicose Muito Alta\n");
+    return 0;
+  }
+
+	return 0;
+}
