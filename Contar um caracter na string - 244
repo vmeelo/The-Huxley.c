@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char nome[50], vogal;
+    int cont =0,  i;
+    gets(nome);
+    scanf("%c", &vogal);
+    for(i = 0; i <= strlen(nome); i++){
+        if(nome[i] == vogal){
+            cont++;
+        }
+        
+    }
+    printf("%d", cont);
+	return 0;
+}
