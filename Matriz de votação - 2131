@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+int i,e, p, k; 
+int arr[50][50];
+int aux[50];
+scanf(" %d", &p);
+scanf(" %d", &e);
+
+for(k = 0; k < e; k++){
+    for (i = 0; i < p; i++){
+        scanf(" %d", &arr[k][i]);
+        aux[i]+= arr[k][i];
+    }
+
+}
+for(i =0; i < p; i++){
+printf("Princesa %d: %d voto(s)\n", i+1, aux[i]);
+}
+	return 0;
+}
