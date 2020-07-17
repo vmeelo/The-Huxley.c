@@ -1,0 +1,42 @@
+#include <stdio.h>
+int main (){
+	char sexo, estilo;
+	float valorCompra, valorM =0, contValor = 0;
+	int cont100=0, contIdade=0, contTerror=0, idade, menorIdade, numCompra = 0;
+	
+scanf(" %d", &idade);
+menorIdade = idade;
+if(idade > 0){
+
+do{
+	scanf(" %c", &sexo);
+	scanf(" %f", &valorCompra);
+	scanf(" %c", &estilo);
+	if(sexo == 'm' && (estilo == 't' || estilo == 'f')){
+		contTerror++;
+	}
+	if ((sexo == 'f') && (valorCompra <= 100)){
+		cont100++;
+		numCompra++;
+		contValor += valorCompra;
+	}
+	else {
+	    numCompra++;
+	    contValor += valorCompra;
+	}
+	valorM = contValor / numCompra;
+	if(menorIdade > idade){
+		menorIdade = idade;
+	}
+	scanf(" %i", &idade);
+}while (idade > 0);
+    printf("%i\n", cont100);
+	printf("%i\n", menorIdade);
+	printf("%.2f\n", valorM);
+	printf("%i\n", contTerror);
+}
+else{
+    printf("0");
+}
+	return 0;
+}
