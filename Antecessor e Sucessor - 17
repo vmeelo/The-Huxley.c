@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+	int x, ant, suc;
+	scanf("%d",&x);
+	ant = x-1;
+	suc = x+1;
+	printf(" %d %d\n",ant, suc);
+
+return 0;
+}
