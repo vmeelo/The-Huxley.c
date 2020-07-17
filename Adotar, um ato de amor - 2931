@@ -1,0 +1,50 @@
+#include<stdio.h>
+int main() {
+ int idade1, idade2, idadeIdeal;
+ char ascendente, conjunta, conhecidos, aval, consentimento, estavel, consAdotando;
+ scanf("%d", &idade1);
+ if (idade1 < 18){
+ 	printf("Nao pode adotar\n");
+ 	return 0;
+ }
+scanf(" %c", &ascendente);
+if (ascendente == 'S'){
+	printf("Nao pode adotar\n");
+	return 0;
+}
+scanf(" %c", &conjunta);
+scanf(" %c", &estavel);
+if (conjunta == 'S'){
+  if(estavel == 'N'){
+    printf("Nao pode adotar\n");
+    return 0;
+  }
+}
+scanf("%d", &idade2);
+if( idade1 < (idade2 + 16)){
+	printf("Nao pode adotar\n");
+	return 0;
+}
+scanf(" %c", &conhecidos);
+if(conhecidos == 'S'){
+	scanf(" %c", &aval);
+			if(aval=='N'){
+			printf("Nao pode adotar\n");
+			return 0;
+      }
+	}
+scanf(" %c", &consentimento);
+if(consentimento == 'N'){
+printf("Nao pode adotar\n");
+	return 0;
+}
+scanf(" %c", &consAdotando);
+if (idade2 > 12){
+  if (consAdotando == 'N'){
+    printf("Nao pode adotar\n");
+  return 0;
+  }
+}
+printf("Pode adotar\n");
+return 0;
+}
