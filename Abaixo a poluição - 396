@@ -1,0 +1,14 @@
+int main() {
+	float multa =0;
+	int i = 0, casa;
+	while(casa != 999){
+		scanf("%i", &casa);
+		if((casa > 2) && (casa != 999)){
+	    	multa += (casa - 2) * 12.89;
+		    i++;
+		}
+	}
+	printf("%.2f\n", multa);
+	printf("%i\n", i);
+	return 0;
+}
