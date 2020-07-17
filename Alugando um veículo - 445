@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main() {
+	int diaria, km, kmMais;
+	float total = 0;
+	scanf("%d", &diaria);
+	scanf("%d", &km);
+	if(km  > diaria * 100){
+		total = ((km -(diaria*100))*12) + diaria * 90;
+		printf("%.2f", total);
+		return 0;
+	}
+	total += diaria * 90;
+	printf("%.2f", total);
+return 0;
+}
